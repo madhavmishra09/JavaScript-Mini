@@ -2,122 +2,169 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    background: linear-gradient(135deg, #e0e7ff 0%, #f8fafc 100%);
     
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: background 0.5s;
 }
 
 .top-buttons {
-    margin-top: 16px;
-    margin-bottom: 32px;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
     display: flex;
-    gap: 12px;
+    gap: 1rem;
 }
 
 .top-buttons button {
-    padding: 8px 24px;
-    font-size: 1rem;
-    border: 1px solid #888;
-    border-radius: 6px;
-    background: #eee;
+    padding: 0.8rem 2.2rem;
+    font-size: 1.08rem;
+    border: none;
+    border-radius: 1.5rem;
+    background: rgba(99, 102, 241, 0.12);
+    color: #3730a3;
     cursor: pointer;
-    font-weight: 500;
-    transition: background 0.2s;
+    font-weight: 600;
+    box-shadow: 0 4px 16px rgba(99, 102, 241, 0.08);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    outline: none;
 }
 
 .top-buttons button:hover {
-    background: #ddd;
+    background: #6366f1;
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(99, 102, 241, 0.18);
 }
 
 .heading {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     font-weight: bold;
-    margin-bottom: 28px;
+    margin-bottom: 2rem;
     text-align: center;
+    color: #3730a3;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px #e0e7ff;
 }
 
 .colors-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 32px;
+    margin-bottom: 2.5rem;
+    background: rgba(255,255,255,0.7);
+    border-radius: 1.2rem;
+    box-shadow: 0 8px 32px rgba(99, 102, 241, 0.10);
+    padding: 2rem 2.5rem;
+    backdrop-filter: blur(6px);
 }
 
 .colors-row {
     display: flex;
-    gap: 12px;
+    gap: 1.2rem;
 }
 
 .color-square {
-    width: 80px;
-    height: 80px;
-    border: 2px solid #222;
-    margin: 0 0 0 0;
+    width: 90px;
+    height: 90px;
+    border: none;
+    margin: 0;
     cursor: pointer;
     box-sizing: border-box;
+    border-radius: 1rem;
+    box-shadow: 0 2px 12px rgba(99, 102, 241, 0.10);
+    transition: transform 0.15s, box-shadow 0.15s;
+    outline: 2px solid transparent;
 }
 
-.color1 { background: #888; }
-.color2 { background: #fff; }
-.color3 { background: #03f; }
-.color4 { background: #ff0; }
+.color-square:focus, .color-square:hover {
+    transform: scale(1.08);
+    box-shadow: 0 4px 24px rgba(99, 102, 241, 0.15);
+    outline: 2px solid #6366f1;
+}
+
+.color1 { background: linear-gradient(135deg, #888 0%, #bcbcbc 100%); }
+.color2 { background: linear-gradient(135deg, #fff 0%, #f3f4f6 100%); }
+.color3 { background: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%); }
+.color4 { background: linear-gradient(135deg, #facc15 0%, #fde047 100%); }
 
 .button {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  margin: 10px;
-  border-radius: 50%;
-  border: 2px solid #333;
-  cursor: pointer;
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    margin: 12px;
+    border-radius: 50%;
+    border: 2.5px solid #6366f1;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(99, 102, 241, 0.10);
+    transition: border 0.2s, transform 0.15s;
 }
-#grey { background: grey; }
-#white { background: white; border: 2px solid #ccc; }
-#blue { background: blue; }
-#yellow { background: yellow; }
+
+.button:focus, .button:hover {
+    border: 2.5px solid #3730a3;
+    transform: scale(1.12);
+}
+
+#grey { background: linear-gradient(135deg, #6b7280 0%, #d1d5db 100%); }
+#white { background: linear-gradient(135deg, #fff 0%, #f3f4f6 100%); border: 2.5px solid #e5e7eb; }
+#blue { background: linear-gradient(135deg, #2563eb 0%, #60a5fa 100%); }
+#yellow { background: linear-gradient(135deg, #fde047 0%, #facc15 100%); }
 
 .canvas {
-  text-align: center;
+    text-align: center;
+    background: rgba(255,255,255,0.8);
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.08);
+    padding: 2rem 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .instruction {
-    margin-top: 24px;
-    font-size: 1.1rem;
-    font-weight: bold;
+    margin-top: 2rem;
+    font-size: 1.15rem;
+    font-weight: 500;
     text-align: center;
-    line-height: 1.4;
+    line-height: 1.6;
+    color: #6366f1;
+    letter-spacing: 0.5px;
+    background: rgba(99, 102, 241, 0.07);
+    padding: 1rem 1.5rem;
+    border-radius: 0.7rem;
+    box-shadow: 0 2px 8px rgba(99, 102, 241, 0.04);
 }
 
+/* Responsive Design */
 @media (max-width: 600px) {
-  body {
-    font-size: 0.95rem;
-    padding: 0 4vw;
-  }
-  .canvas {
-    padding: 0 2vw;
-  }
-  .button {
-    width: 32px;
-    height: 32px;
-    margin: 6px;
-  }
-  .color-square {
-    width: 48px;
-    height: 48px;
-  }
-  .heading {
-    font-size: 1.1rem;
-  }
-  .instruction {
-    font-size: 1rem;
-  }
-  .colors-row {
-    gap: 6px;
-  }
-  .top-buttons button {
-    padding: 6px 12px;
-    font-size: 0.95rem;
-  }
+    body {
+        font-size: 0.97rem;
+        padding: 0 2vw;
+    }
+    .canvas,
+    .colors-container {
+        padding: 1rem 1vw;
+    }
+    .button {
+        width: 32px;
+        height: 32px;
+        margin: 6px;
+    }
+    .color-square {
+        width: 54px;
+        height: 54px;
+    }
+    .heading {
+        font-size: 1.2rem;
+    }
+    .instruction {
+        font-size: 1rem;
+        padding: 0.7rem 1vw;
+    }
+    .colors-row {
+        gap: 7px;
+    }
+    .top-buttons button {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.95rem;
+    }
 }
