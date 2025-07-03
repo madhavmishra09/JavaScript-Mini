@@ -1,0 +1,51 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a pleasant background and font */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Centered container for content */
+.container {
+    background: #fff;
+    padding: 2rem 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.15);
+    text-align: center;
+}
+
+/* Style for buttons */
+button {
+    background: #74ebd5;
+    color: #222;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background: #ACB6E5;
+}
+
+/* Optional: style for color display */
+.color-display {
+    margin: 1.5rem 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
