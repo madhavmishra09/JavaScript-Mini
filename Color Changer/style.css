@@ -1,51 +1,123 @@
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Set a pleasant background and font */
 body {
     min-height: 100vh;
-    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
-    font-family: 'Segoe UI', Arial, sans-serif;
-    color: #222;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #f2f2f2 0%, #e6e6e6 100%);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
-/* Centered container for content */
-.container {
-    background: #fff;
-    padding: 2rem 2.5rem;
-    border-radius: 1rem;
-    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.15);
+.top-buttons {
+    margin-top: 16px;
+    margin-bottom: 32px;
+    display: flex;
+    gap: 12px;
+}
+
+.top-buttons button {
+    padding: 8px 24px;
+    font-size: 1rem;
+    border: 1px solid #888;
+    border-radius: 6px;
+    background: #eee;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.top-buttons button:hover {
+    background: #ddd;
+}
+
+.heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 28px;
     text-align: center;
 }
 
-/* Style for buttons */
-button {
-    background: #74ebd5;
-    color: #222;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
-    font-size: 1rem;
+.colors-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.colors-row {
+    display: flex;
+    gap: 12px;
+}
+
+.color-square {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #222;
+    margin: 0 0 0 0;
     cursor: pointer;
-    transition: background 0.2s;
-    margin-top: 1rem;
+    box-sizing: border-box;
 }
 
-button:hover {
-    background: #ACB6E5;
+.color1 { background: #888; }
+.color2 { background: #fff; }
+.color3 { background: #03f; }
+.color4 { background: #ff0; }
+
+.button {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  cursor: pointer;
+}
+#grey { background: grey; }
+#white { background: white; border: 2px solid #ccc; }
+#blue { background: blue; }
+#yellow { background: yellow; }
+
+.canvas {
+  text-align: center;
 }
 
-/* Optional: style for color display */
-.color-display {
-    margin: 1.5rem 0;
-    font-size: 1.25rem;
+.instruction {
+    margin-top: 24px;
+    font-size: 1.1rem;
     font-weight: bold;
-    letter-spacing: 1px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 0.95rem;
+    padding: 0 4vw;
+  }
+  .canvas {
+    padding: 0 2vw;
+  }
+  .button {
+    width: 32px;
+    height: 32px;
+    margin: 6px;
+  }
+  .color-square {
+    width: 48px;
+    height: 48px;
+  }
+  .heading {
+    font-size: 1.1rem;
+  }
+  .instruction {
+    font-size: 1rem;
+  }
+  .colors-row {
+    gap: 6px;
+  }
+  .top-buttons button {
+    padding: 6px 12px;
+    font-size: 0.95rem;
+  }
 }
