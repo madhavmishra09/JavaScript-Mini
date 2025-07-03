@@ -3,12 +3,13 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', 'Arial', sans-serif;
-    background: linear-gradient(135deg, #e0e7ff 0%, #f8fafc 100%);
+    background: #f8fafc;
+    /* Removed gradient, now solid color */
     
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: background 0.5s;
+    transition: background 0.5s ease;
 }
 
 .top-buttons {
