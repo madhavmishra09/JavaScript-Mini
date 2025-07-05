@@ -64,5 +64,5 @@ MIT License
 ---
 
 <p align="center">
-  <b>Made with ❤️ by [Your Name]</b>
+  <b>Made by Madhav Mishra</b>
 </p>
