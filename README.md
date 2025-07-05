@@ -8,8 +8,8 @@ Each project is designed to boost your JavaScript skills through practical, real
 
 ## ✨ Project Summaries
 
-### 1️⃣ Basic Calculator
-🧮 *A simple calculator app that performs addition, subtraction, multiplication, and division using JavaScript functions and DOM manipulation.*
+### 1️⃣ BMI Calculator
+⚖️ *A simple BMI calculator app that computes Body Mass Index based on user input for height and weight. Demonstrates form handling, basic arithmetic, and DOM manipulation.*
 
 ---
 
